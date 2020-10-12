@@ -8,5 +8,5 @@ let birth_year = readlineSync.question('Can you give me your birth year please? 
 let animal = readlineSync.question('Can you tell me which is your favourite animal? > ');
 
 console.log("You are " + firstName + " " + lastName + ", a " + animal + 
-	" in danger of extinction, which lives in " + city + ", have " + shoe_size + "cm paws and you will live till "
+	" in danger of extinction, which lives in " + city + ", have " + shoe_size + "cm paws and will live till "
 	+ (Number(birth_year) + 100) + "...");
