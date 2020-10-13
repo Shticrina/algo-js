@@ -14,7 +14,7 @@ if (number >= 1 && number <= 7) {
 	} else if (number == 5) {
 		console.log("Friday");
 	} else if (number == 6) {
-		console.log("Satyrday");
+		console.log("Saturday");
 	} else {
 		console.log("Sunday");
 	}
