@@ -56,7 +56,7 @@ function min(arr) {
 	let min = arr[0];
 
 	if (!Array.isArray(arr)) {
-		console.log("The parameter in 'average(param)' has to be an array!");
+		console.log("The parameter in 'min(param)' has to be an array!");
 		return;
 	}
 
@@ -78,7 +78,7 @@ function max(arr) {
 	let max = arr[0];
 
 	if (!Array.isArray(arr)) {
-		console.log("The parameter in 'average(param)' has to be an array!");
+		console.log("The parameter in 'max(param)' has to be an array!");
 		return;
 	}
 
