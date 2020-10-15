@@ -1,8 +1,12 @@
 const readlineSync = require("readline-sync");
+const fs = require("fs");
 
-let pizza_flavours = [];
+// let pizza_flavours = [];
 let action_nb = "";
 let showMenu = false;
+
+let read_file = fs.readFileSync("pizza_flavours.txt", "utf-8");
+let pizza_flavours = read_file.split("\n");
 
 do {
 	console.log("\nHello! Welcome to the Pizza Flavors Manager.");
@@ -57,3 +61,8 @@ do {
 			showMenu = false;
 	}
 } while(showMenu);
+
+// fs.writeFile("pizza_flavours.txt", pizza_flavours.join(", "));
+fs.writeFile('pizza_flavours.txt', pizza_flavours.join("\n"), function (err) {
+	if (err) throw err;
+});
