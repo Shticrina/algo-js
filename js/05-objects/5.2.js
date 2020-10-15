@@ -35,12 +35,20 @@ function getNames() {
 }
 
 function randomizeCast(tvSerie) {
-	for(let i = tvSerie.actors.length-1; i > 0; i--) {
+	/*for(let i = tvSerie.actors.length-1; i > 0; i--) {
 		const j = Math.floor(Math.random() * i);
 		const temp = tvSerie.actors[i];
 
 		tvSerie.actors[i] = tvSerie.actors[j];
 		tvSerie.actors[j] = temp;
+	}*/
+
+	for(let i = 0; i < tvSerie.actors.length; i++) {
+		let randCast = Math.floor(Math.random() * (tvSerie.actors.length-1) + 1);
+		let temp = tvSerie.actors[i];
+
+		tvSerie.actors[i] = tvSerie.actors[randCast];
+		tvSerie.actors[randCast] = temp;
 	}
 
 	return tvSerie;
